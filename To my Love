@@ -1,0 +1,129 @@
+<h1>Hey Babe 💖</h1>
+
+<p>
+He will be my always, the love of my life, the one who holds my heart in ways no one else ever could.
+Every moment with him feels like a beautiful melody, a song that plays endlessly in my soul.
+His laughter lights up my darkest days, and his presence brings me a peace I have never known before.
+</p>
+
+<p>
+Through every challenge, every tear, every joy, and every triumph, he is my constant, my anchor, my home.
+No matter where life takes us, no matter how the seasons change, my love for him will remain unwavering,
+timeless, and eternal.
+</p>
+
+<p>
+He is my first thought in the morning, my last whisper at night, and the quiet certainty that love,
+true love, exists and thrives in our hearts.
+</p>
+
+<p>
+He is my forever, my always, my everything 💞
+</p>
+
+<h2>Will you be my Valentine? 🌹</h2>
+<button id="no">No</button>
+<div class="hearts"></div>
+.hearts::before {
+  content: "💖 💕 💘 💞 💓 💗";
+  position: fixed;
+  top: -10%;
+  left: 50%;
+  animation: fall 5s linear infinite;
+  font-size: 30px;
+}
+
+@keyframes fall {
+  0% { transform: translate(-50%, 0); }
+  100% { transform: translate(-50%, 120vh); }
+<iframe style="border-radius:12px"
+src="https://open.spotify.com/embed/track/0fCQRUbk8LIQTdQYGNtGyv"
+width="300"
+height="80"
+frameborder="0"
+allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+</iframe>
+}
+<style>
+body {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #ffe6f0;
+  font-family: 'Georgia', serif;
+  text-align: center;
+  overflow: hidden;
+}
+
+h1, h2 {
+  color: #ff7eb3;
+}
+
+button {
+  background-color: #ff4d6d;
+  border: none;
+  padding: 12px 25px;
+  font-size: 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  color: white;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #ff1e56;
+}
+</style>
+<style>
+.slideshow {
+  width: 280px;
+  height: 380px;
+  margin: 30px auto;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(255, 126, 179, 0.6);
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+</style>
+<script>
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+setInterval(() => {
+  slides[index].classList.remove("active");
+  index = (index + 1) % slides.length;
+  slides[index].classList.add("active");
+}, 3000);
+</script>
+<script>
+function yesClicked() {
+  document.body.innerHTML = `
+    <h1>I knew you'd say YES 🥹💖</h1>
+    <p>You are my forever, Babe.</p>
+    <p>Happy Valentine’s Day 🖤</p>
+    <div style="font-size:40px;">💖 💕 💘 💞 💗</div>
+  `;
+}
+</script>
+<script>
+const noBtn = document.getElementById("no");
+
+noBtn.addEventListener("mouseover", () => {
+  const x = Math.random() * (window.innerWidth - noBtn.clientWidth);
+  const y = Math.random() * (window.innerHeight - noBtn.clientHeight);
+  noBtn.style.position = "absolute";
+  noBtn.style.left = x + "px";
+  noBtn.style.top = y + "px";
+});
+</script>
